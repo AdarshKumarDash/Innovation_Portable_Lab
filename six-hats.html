@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Six Hats - Portable Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hats-page">
+  <h1>Six Hats</h1>
+  <p class="subtitle">Structured Thinking Applied to the Portable Lab</p>
+
+  <div class="hats-wrapper">
+
+    <!-- SVG ARROWS -->
+    <svg class="flow-arrows" viewBox="0 0 800 800">
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10"
+          refX="5" refY="5" orient="auto">
+          <path d="M0,0 L10,5 L0,10 Z" fill="#888"/>
+        </marker>
+      </defs>
+
+      <!-- Circular Flow -->
+      <path d="M400 80 A320 320 0 1 1 399 80"
+            fill="none"
+            stroke="#888"
+            stroke-dasharray="8 8"
+            stroke-width="2"
+            marker-end="url(#arrow)"/>
+
+      <!-- Start -->
+      <text x="560" y="90" fill="#aaa">Start</text>
+      <circle cx="540" cy="80" r="6" fill="#aaa"/>
+
+      <!-- Finish -->
+      <text x="180" y="90" fill="#aaa">Finish</text>
+      <circle cx="260" cy="80" r="6" fill="#aaa"/>
+    </svg>
+
+    <!-- CENTER -->
+    <div class="center-node">
+      Six Thinking Hats
+    </div>
+
+    <!-- WHITE -->
+    <div class="hat white">
+      <h3>White</h3>
+      <p>Facts & Data</p>
+      <ul>
+        <li>Lab shortage in schools</li>
+        <li>High equipment cost</li>
+        <li>Limited access to experiments</li>
+      </ul>
+    </div>
+
+    <!-- GREEN -->
+    <div class="hat green">
+      <h3>Green</h3>
+      <p>Creativity</p>
+      <ul>
+        <li>Portable Customized kits</li>
+        <li>Sensor-based learning</li>
+        <li>Modular lab design</li>
+      </ul>
+    </div>
+
+    <!-- YELLOW -->
+    <div class="hat yellow">
+      <h3>Yellow</h3>
+      <p>Benefits</p>
+      <ul>
+        <li>Affordable education</li>
+        <li>Hands-on learning</li>
+        <li>Scalable solution</li>
+      </ul>
+    </div>
+
+    <!-- BLACK -->
+    <div class="hat black">
+      <h3>Black</h3>
+      <p>Risks</p>
+      <ul>
+        <li>Sensor accuracy</li>
+        <li>Durability</li>
+        <li>Safety standards</li>
+      </ul>
+    </div>
+
+    <!-- RED -->
+    <div class="hat red">
+      <h3>Red</h3>
+      <p>Emotions</p>
+      <ul>
+        <li>Student curiosity</li>
+        <li>Teacher confidence</li>
+        <li>Fear of new technology</li>
+      </ul>
+    </div>
+
+    <!-- BLUE -->
+    <div class="hat blue">
+      <h3>Blue</h3>
+      <p>Control</p>
+      <ul>
+        <li>Plan experiments</li>
+        <li>Guide usage</li>
+        <li>Evaluate outcomes</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <a class="back" href="index.html">← Back to Home</a>
+</div>
+
+</body>
+</html>

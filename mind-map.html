@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mind Map - Portable Lab</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+    
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #0f2027, #000);
+  font-family: "Segoe UI", sans-serif;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin: 16px 0;
+}
+
+svg {
+  width: 100%;
+  height: 100vh;
+}
+
+/* LINKS */
+.link {
+  stroke: #777;
+  stroke-width: 2;
+  fill: none;
+}
+
+/* NODES */
+.center {
+  fill: #111;
+  stroke: #00f2fe;
+  stroke-width: 3;
+}
+
+.node {
+  rx: 22;
+  ry: 22;
+}
+
+.subnode {
+  rx: 14;
+  ry: 14;
+  opacity: 0.95;
+}
+
+/* COLORS */
+.benefits { fill: #1abc9c; }
+.planning { fill: #e74c3c; }
+.creativity { fill: #3498db; }
+.collaboration { fill: #e84393; }
+.productivity { fill: #f1c40f; }
+.upgrade { fill: #9b59b6; }
+
+/* TEXT */
+.main-text {
+  font-size: 14px;
+  font-weight: bold;
+  fill: #000;
+  text-anchor: middle;
+}
+
+.sub-text {
+  font-size: 11px;
+  fill: #000;
+  text-anchor: middle;
+}
+</style>
+</head>
+<body>
+<h1>Mind Mapping – Portable Lab</h1>
+
+<svg viewBox="0 0 1800 1400">
+
+<!-- CENTER -->
+<ellipse cx="900" cy="500" rx="150" ry="70" class="center"/>
+<text x="900" y="485" fill="#00f2fe" font-size="24" text-anchor="middle">PORTABLE</text>
+<text x="900" y="520" fill="#00f2fe" font-size="24" text-anchor="middle">LAB</text>
+
+<!-- ================= BENEFITS ================= -->
+<path d="M900 430 C650 250, 500 250, 350 250" class="link"/>
+<rect x="250" y="210" width="200" height="60" class="node benefits"/>
+<text x="350" y="245" class="main-text">BENEFITS</text>
+
+<!-- BENEFITS SUB -->
+<path d="M350 270 C320 310, 280 340, 260 370" class="link"/>
+<path d="M350 270 C380 310, 420 340, 440 370" class="link"/>
+<path d="M350 270 C350 310, 350 340, 350 370" class="link"/>
+
+<rect x="220" y="370" width="140" height="40" class="subnode benefits"/>
+<text x="290" y="395" class="sub-text">Affordable</text>
+
+<rect x="380" y="370" width="160" height="40" class="subnode benefits"/>
+<text x="460" y="395" class="sub-text">Easy to Memorize</text>
+
+<rect x="300" y="420" width="160" height="40" class="subnode benefits"/>
+<text x="380" y="445" class="sub-text">Portable Lab 2.0 Features</text>
+
+<!-- ================= PLANNING ================= -->
+<path d="M900 430 C1150 250, 1300 250, 1450 250" class="link"/>
+<rect x="1350" y="210" width="200" height="60" class="node planning"/>
+<text x="1450" y="245" class="main-text">PLANNING</text>
+
+<path d="M1450 270 C1420 310, 1380 340, 1360 370" class="link"/>
+<path d="M1450 270 C1480 310, 1520 340, 1540 370" class="link"/>
+<path d="M1450 270 C1450 310, 1450 340, 1450 370" class="link"/>
+
+<rect x="1320" y="370" width="160" height="40" class="subnode planning"/>
+<text x="1400" y="395" class="sub-text">Goals</text>
+
+<rect x="1500" y="370" width="160" height="40" class="subnode planning"/>
+<text x="1580" y="395" class="sub-text">Strategies</text>
+
+<rect x="1410" y="420" width="160" height="40" class="subnode planning"/>
+<text x="1490" y="445" class="sub-text">Future Upgrades</text>
+
+<!-- ================= CREATIVITY ================= -->
+<path d="M960 500 C1120 500, 1240 510, 1360 560" class="link"/>
+<rect x="1280" y="530" width="200" height="60" class="node creativity"/>
+<text x="1380" y="565" class="main-text">CREATIVITY</text>
+
+<path d="M1380 590 C1360 630, 1340 660, 1310 690" class="link"/>
+<path d="M1380 590 C1400 630, 1440 660, 1470 690" class="link"/>
+<path d="M1380 590 C1380 630, 1380 660, 1380 690" class="link"/>
+
+<rect x="1240" y="690" width="160" height="40" class="subnode creativity"/>
+<text x="1320" y="715" class="sub-text">Ideas</text>
+
+<rect x="1440" y="690" width="180" height="40" class="subnode creativity"/>
+<text x="1530" y="715" class="sub-text">Innovation</text>
+
+<rect x="1340" y="740" width="180" height="40" class="subnode creativity"/>
+<text x="1430" y="765" class="sub-text">Experiments</text>
+
+<!-- ================= COLLABORATION ================= -->
+<path d="M840 500 C600 500, 460 520, 320 570" class="link"/>
+<rect x="200" y="530" width="240" height="60" class="node collaboration"/>
+<text x="320" y="565" class="main-text">COLLABORATION</text>
+
+<path d="M320 590 C300 630, 280 660, 260 690" class="link"/>
+<path d="M320 590 C340 630, 380 660, 410 690" class="link"/>
+<path d="M320 590 C320 630, 320 660, 320 690" class="link"/>
+
+<rect x="200" y="690" width="160" height="40" class="subnode collaboration"/>
+<text x="280" y="715" class="sub-text">Teamwork</text>
+
+<rect x="360" y="690" width="180" height="40" class="subnode collaboration"/>
+<text x="450" y="715" class="sub-text">Sharing</text>
+
+<rect x="280" y="740" width="160" height="40" class="subnode collaboration"/>
+<text x="360" y="765" class="sub-text">Mentoring</text>
+
+<!-- ================= PRODUCTIVITY ================= -->
+<path d="M900 550 C900 700, 900 760, 900 830" class="link"/>
+<rect x="720" y="830" width="360" height="60" class="node productivity"/>
+<text x="900" y="865" class="main-text">PRODUCTIVITY</text>
+
+<path d="M900 900 C860 940, 820 970, 780 1000" class="link"/>
+<path d="M900 900 C940 940, 980 970, 1020 1000" class="link"/>
+<path d="M900 900 C900 940, 900 970, 900 1000" class="link"/>
+
+<rect x="720" y="1000" width="160" height="40" class="subnode productivity"/>
+<text x="800" y="1025" class="sub-text">Efficient</text>
+
+<rect x="880" y="1000" width="180" height="40" class="subnode productivity"/>
+<text x="970" y="1025" class="sub-text">Intuitive</text>
+
+<rect x="810" y="1050" width="180" height="40" class="subnode productivity"/>
+<text x="900" y="1075" class="sub-text">Time-Saving</text>
+
+<!-- ================= UPGRADE NODE ================= -->
+<path d="M900 430 C900 150, 1700 150, 1700 350" class="link"/>
+<rect x="1600" y="310" width="200" height="60" class="node upgrade"/>
+<text x="1700" y="345" class="main-text">PORTABLE LAB 2.0</text>
+
+<path d="M1700 370 C1680 410, 1660 440, 1630 470" class="link"/>
+<path d="M1700 370 C1720 410, 1760 440, 1790 470" class="link"/>
+
+<rect x="1580" y="470" width="180" height="40" class="subnode upgrade"/>
+<text x="1670" y="495" class="sub-text">Advanced Features</text>
+
+<rect x="1720" y="470" width="160" height="40" class="subnode upgrade"/>
+<text x="1800" y="495" class="sub-text">Better Portability</text>
+
+</svg>
+<div style="position: fixed; top: 20px; left: 20px; z-index: 1000;">
+  <a href="index.html" 
+     style="
+  display: inline-block;
+  margin-top: 30px;
+  color: #00f2fe;
+  text-decoration: none;">
+    ← Back to Home
+  </a>
+</div>
+</body>
+</html>

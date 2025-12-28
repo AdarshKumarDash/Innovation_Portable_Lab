@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #121212, #000);
+  color: #f5f5f5;
+}
+
+/* HOME */
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-btn {
+  width: 250px;           
+  height: 60px;           
+  margin-top: 30px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  cursor: pointer;
+  color: #000;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.nav-btn:hover {
+  transform: scale(1.08);
+}
+
+
+/* PAGE */
+.page {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.subtitle {
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+/* CARDS */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 14px;
+  cursor: pointer;
+  border-left: 4px solid transparent;
+}
+
+.card:hover {
+  border-left: 4px solid #00f2fe;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.key {
+  font-size: 0.75rem;
+  background: #00f2fe;
+  color: #000;
+  padding: 4px 10px;
+  border-radius: 20px;
+  opacity: 0;
+}
+
+.card:hover .key {
+  opacity: 1;
+}
+
+/* EXPAND */
+.card-body {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: 10px;
+}
+
+.card.active .card-body {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.example {
+  opacity: 0.7;
+  font-style: italic;
+}
+
+.back {
+  display: inline-block;
+  margin-top: 30px;
+  color: #00f2fe;
+  text-decoration: none;
+}
+
+.point {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.spaced-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.spaced-list span {
+  background: rgba(0, 242, 254, 0.15);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+/* SIX HATS PAGE */
+
+.hats-page {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hats-diagram {
+  position: relative;
+  width: 700px;
+  height: 700px;
+  margin: 50px auto;
+}
+
+.center-node {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #111;
+  border: 2px solid #00f2fe;
+  padding: 20px 30px;
+  border-radius: 14px;
+  font-weight: bold;
+}
+
+/* HAT COMMON */
+.hat {
+  position: absolute;
+  width: 200px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 14px;
+  padding: 15px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.hat ul {
+  margin-top: 10px;
+  padding-left: 18px;
+  display: none;
+}
+
+.hat:hover ul {
+  display: block;
+}
+
+.hat h3 {
+  margin: 0;
+}
+
+/* POSITIONING */
+.white  { top: 0; left: 250px; border-left: 4px solid #ccc; }
+.green  { top: 180px; right: 0; border-left: 4px solid #2ecc71; }
+.yellow { bottom: 180px; right: 0; border-left: 4px solid #f1c40f; }
+.black  { bottom: 0; left: 250px; border-left: 4px solid #000; }
+.red    { bottom: 180px; left: 0; border-left: 4px solid #e74c3c; }
+.blue   { top: 180px; left: 0; border-left: 4px solid #3498db; }
+
+/* COLOR HINTS */
+.white h3  { color: #ddd; }
+.green h3  { color: #2ecc71; }
+.yellow h3 { color: #f1c40f; }
+.black h3  { color: #aaa; }
+.red h3    { color: #e74c3c; }
+.blue h3   { color: #3498db; }
+
+/* SIX HATS – PREMIUM UI */
+
+.hats-wrapper {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  margin: 40px auto;
+}
+
+.flow-arrows {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.center-node {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255,255,255,0.08);
+  border: 2px solid #00f2fe;
+  padding: 22px 30px;
+  border-radius: 16px;
+  font-weight: bold;
+  z-index: 3;
+  backdrop-filter: blur(8px);
+}
+
+/* HATS */
+.hat {
+  position: absolute;
+  width: 200px;
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(6px);
+  z-index: 2;
+  cursor: pointer;
+  transition: transform 0.4s ease, background 0.4s ease;
+}
+
+.hat ul {
+  margin-top: 14px;
+  padding-left: 20px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.6s ease;
+}
+
+.hat ul li {
+  margin: 10px 0;        
+  line-height: 1.6;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.hat:hover ul {
+  opacity: 1;
+  max-height: 260px;
+}
+
+.hat:hover ul li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hat {
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    background 0.45s ease,
+    box-shadow 0.45s ease;
+}
+
+.hat:hover {
+  transform: scale(1.06);
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 12px 30px rgba(0, 242, 254, 0.15);
+}
+
+
+/* POSITIONS */
+.white  { top: 20px; left: 300px; border-left: 4px solid #ccc; }
+.green  { top: 200px; right: 0; border-left: 4px solid #2ecc71; }
+.yellow { bottom: 200px; right: 0; border-left: 4px solid #f1c40f; }
+.black  { bottom: 20px; left: 300px; border-left: 4px solid #555; }
+.red    { bottom: 200px; left: 0; border-left: 4px solid #e74c3c; }
+.blue   { top: 200px; left: 0; border-left: 4px solid #3498db; }
+
+/* COLOR HEADERS */
+.white h3  { color: #eee; }
+.green h3  { color: #2ecc71; }
+.yellow h3 { color: #f1c40f; }
+.black h3  { color: #aaa; }
+.red h3    { color: #e74c3c; }
+.blue h3   { color: #3498db; }
+
+.hat h3 {
+  margin-bottom: 4px;
+}
+
+.hat p {
+  margin-top: 0;
+  opacity: 0.75;
+  font-size: 0.8rem;
+}
