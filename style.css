@@ -307,3 +307,20 @@ body {
   opacity: 0.75;
   font-size: 0.8rem;
 }
+
+.site-footer {
+  margin-top: 70px;
+  padding: 18px 12px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #aaa;
+  background: rgba(255,255,255,0.04);
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.site-footer span {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.75rem;
+  color: #777;
+}
